@@ -22,7 +22,7 @@ a:hover {
     cursor: pointer;
 }
 
-/* Navigation Bar */
+/* Navigation Bar Section*/
 #nav-bar {
     display: grid;
     grid-template-columns: repeat(2, 53px) 1fr repeat(3, 53px) 90px;
@@ -70,7 +70,7 @@ a:hover {
     grid-area: sign-in;
 }
 
-/* Main */
+/* Main Section */
 #main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -86,7 +86,7 @@ a:hover {
 
 .buttons {
     background-color: rgba(0, 0 ,0 ,0.05);
-    border-style: none; 
+    border: 1px solid rgba(0, 0 ,0 ,0);
     margin: 6px;
     padding: 10px 19px;
     border-radius: 4px;
@@ -98,8 +98,18 @@ a:hover {
     border: 1px solid rgba(0, 0 ,0 ,0.25);
     cursor: pointer;
 }
+.buttons:focus {
+    outline: 0;
+    border: 1px solid #4285f4;
+}
+
 #search:hover {
     box-shadow: 0px 1px 4px 1.5px rgba(0, 0 ,0 ,0.1);
+}
+
+#search:focus {
+    outline: 0;  
+    box-shadow: 0px 1px 4px 1.5px rgba(0, 0 ,0 ,0.1); 
 }
 
 #logo {
@@ -112,6 +122,8 @@ a:hover {
     height: 40px;
     border: 1px solid rgb(216, 216, 216);
     border-radius: 19px;
+    padding: 1px 30px;
+    form-autocomplete: off;
 }
 #main-buttons {
     grid-area: main-buttons;
@@ -121,7 +133,7 @@ a:hover {
     flex-basis: auto;
 }
 
-/* Footer */
+/* Footer Sextion*/
 #footer {
     display: grid;
     grid-template-columns: repeat(2, 90px) 120px 1fr repeat(3, 73px);
